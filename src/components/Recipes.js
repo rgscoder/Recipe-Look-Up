@@ -1,8 +1,13 @@
 import React from 'react'
+import React, { useState } from "react";
 
-function Recipes({show, item, onClose}) {
+function Recipes({ recipe }) {
+    const [view, setView] = useState(false);
+    const { label, image, url, ingredients } = recipe.recipe;
   return (
-    <div>Recipes</div>
+    <div>
+        
+    </div>
   )
 }
 

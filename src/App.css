@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: rgb(227, 193, 0);
+  font-size: 50px;
+}
+
+:root {
+  background-image: url(https://garden.spoonflower.com/c/4038500/p/f/m/hV12_nkq63YE2e7s0XwYGjVOYeyyvc65dR3bg0VpcRbuZg2pfmM/Spoons.jpg);
+  background-size:contain;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.649);
+}
