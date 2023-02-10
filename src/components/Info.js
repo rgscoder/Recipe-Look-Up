@@ -23,16 +23,20 @@ const Info=({preview,object,onClose}) => {
                 {/* seperate  */}
                 {/* add headers */}
               <h1>{object.recipe.label}</h1>
-            <h2>{object.recipe.cuisineType}</h2>
+            <h2>({object.recipe.cuisineType})</h2>
             <h3><i>{object.recipe.mealType}</i></h3>
 
             <div>
             <h2>ingredients</h2>
-            <p>{object.recipe.ingredients}</p>
+            <p>{object.recipe.ingredients.text}</p>
             </div>
-
+            <hr></hr>
+            <h2>Additional Information</h2>
+            <h3>Total Calories</h3>
             <p>{object.recipe.calories}</p>
+            <h3>Dietary Restrictions</h3>
             <p>{object.recipe.dietLabels}</p>
+            <h3>Best served during:</h3>
             <p>{object.recipe.mealType}</p>
             </li>
             </ul>
