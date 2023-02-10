@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
+import Display from './Display';
 
 
 function Main() {
@@ -9,7 +10,7 @@ function Main() {
     const searchFood = (e)=> {
         if(e.key==="Enter") {
             axios.get('https://api.edamam.com/api/recipes/v2?type=public&q='+ search +'&app_id=d1247ebb&app_key=8222ea91343ff1721c1371721d2afb33')
-            .then(res=>console.log(res.data.hits))
+            .then(res=>setFood(res.data.hits))
             .catch(err=>console.log(err));
                 // searchFood.catch((error) => {
                 //     console.error(error);
@@ -18,6 +19,7 @@ function Main() {
         }//setFood(res.)
     }
   return (
+  <div>
     <div>
         <h1>How to Cook That!</h1>
         <hr></hr>
@@ -26,8 +28,13 @@ function Main() {
                 onChange={event=>setSearch(event.target.value)} onKeyPress={searchFood}>
 
                 </input>
-                <button></button>
+                <button>search</button>
+                {/* add functionality */}
             </div>
+    </div>
+        <div>
+            {<Display recipe={food} />}
+        </div>
     </div>
   )
 }
