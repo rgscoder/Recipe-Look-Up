@@ -3,6 +3,7 @@ import axios from 'axios';
 import Display from './Display';
 
 
+
 function Main() {
     const [search, setSearch] = useState("");
     const [food, setFood] = useState([]);
@@ -35,6 +36,7 @@ function Main() {
         <div>
             {<Display recipes={food} />}
         </div>
+
     </div>
   )
 }

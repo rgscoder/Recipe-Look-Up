@@ -1,15 +1,19 @@
 import React from 'react'
-console.log("whhy")
+
 
 const Info=({preview,object,onClose}) => {
+  
+
   if(!preview)
   {
-    console.log("hi")
     return null;
   }
   // try with .SMALL
   // else {
   let thumbnail= object.recipe.images.REGULAR.url;
+let list = object.recipe.ingredientLines
+  // let list=JSON. stringify(object.recipe.ingredientLines)
+  // console.log(list)
   return (
     <>
     <div>
@@ -25,11 +29,16 @@ const Info=({preview,object,onClose}) => {
               <h1>{object.recipe.label}</h1>
             <h2>({object.recipe.cuisineType})</h2>
             <h3><i>{object.recipe.mealType}</i></h3>
-
+{/*  */}
             <div>
-            <h2>ingredients</h2>
-            <p>{object.recipe.ingredients.text}</p>
+            <h2>Ingredients</h2>
+           {/* <li>{object.recipe.ingredientLines}</li> */}
+           <ul>
+                    {list.map((el,i) => <li key={i}>{el}</li> )}
+                </ul>
+            
             </div>
+{/*  */}
             <hr></hr>
             <h2>Additional Information</h2>
             <h3>Total Calories</h3>
