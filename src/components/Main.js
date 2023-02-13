@@ -16,25 +16,25 @@ function Main() {
                 // searchFood.catch((error) => {
                 //     console.error(error);
                 // })
-                
+        
+             
         }//setFood(res.)
     }
   return (
-  <div>
-    <div>
-        <h1>How to Cook That!</h1>
-        <hr></hr>
-            <div>
-                <input placeholder="Enter Food Type Here" type="text" value={search} 
-                onChange={event=>setSearch(event.target.value)} onKeyPress={searchFood}>
-
-                </input>
-                <button>search</button>
-                {/* add functionality */}
+  <div className="-">
+    <div className='main'>
+        <h1 id="sub-title">Find a Recipe!</h1>
+        <br></br>
+            <div className="search-all">
+                
+                <input id='searchbar' placeholder="Enter Food Type Here" type="text" value={search} 
+                onChange={event=>setSearch(event.target.value)} onKeyPress={searchFood}></input>
+                
+            
             </div>
-    </div>
-        <div>
-            {<Display recipes={food} />}
+            </div>
+            <div>
+            {<Display recipes={food}/>}
         </div>
 
     </div>

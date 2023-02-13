@@ -1,16 +1,94 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif+Tamil:wght@300&display=swap');
+
+:root {
+  /* background-image: url(https://garden.spoonflower.com/c/4038500/p/f/m/hV12_nkq63YE2e7s0XwYGjVOYeyyvc65dR3bg0VpcRbuZg2pfmM/Spoons.jpg); */
+  /* background-size:contain; */
+  background-color: rgb(255, 212, 197);
+}
+
+
+.main {
+  background-image: url(./components/fruit.jpeg);
+  background-size: cover;
+  padding-bottom: 2%;
+  position: relative;
+}
 
 h1 {
   font-family: 'Lobster', cursive;
   color: rgb(227, 193, 0);
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+#sub-title {
+  font-family: 'Noto Serif Tamil', serif;
   font-size: 50px;
 }
 
-:root {
-  background-image: url(https://garden.spoonflower.com/c/4038500/p/f/m/hV12_nkq63YE2e7s0XwYGjVOYeyyvc65dR3bg0VpcRbuZg2pfmM/Spoons.jpg);
-  background-size:contain;
+#searchbar {
+  width: 500px;
+  height: 40px;
+  border-left: none;
+  border-right: none;
+  border-radius: 10px !important;
+  
 }
 
-body {
-  background-color: rgba(0, 0, 0, 0.649);
-} */
+.search-all {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#noresult-div {
+  display: grid;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+#no-result {
+  background-color: rgb(227, 193, 0);
+}
+
+.popup {
+  display: inline-block;
+  margin: 20px;
+  width: 230px;
+  height: 350px;
+  border: 1px black solid;
+  padding-top: 2%;
+  background-color: rgb(251, 185, 161);
+  border-radius: 10px !important;
+  }
+.popup:hover {
+background-color: rgb(249, 152, 117);;
+}
+ 
+  .popup-text {
+width: 230px;
+height: 150px;
+font-weight: bolder;
+display: grid;
+text-align: center;
+
+  }
+
+  .img {
+    display: flex;
+  justify-content: center;
+    
+  }
+
+  .thumb {
+    border-radius: 10px !important;
+    border: 1px black solid;
+  }
+
+  .row {
+    min-height: fit-content;
+    width: fit-content;
+  }
+

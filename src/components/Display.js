@@ -6,9 +6,12 @@ function Display({ recipes }) {
   const [preview, setPreview] = useState(false);
   const [indivRecipe, setIndivRecipe] = useState();
   console.log(recipes)
+  if (recipes.length===0) {
+    return (<div id="noresult-div"><h5 id="no-result">No results found</h5></div>)
+  }
   return (
     
-    <div>
+    <div className="row">
     
       {recipes.map((object) => {
         let thumbnail= object.recipe.images.SMALL.url;
@@ -17,13 +20,13 @@ function Display({ recipes }) {
 
         if (thumbnail != undefined && title != undefined) {
           return (
-            <div>
+            <div className="popup">
             <div onClick={() => {setPreview(true);setIndivRecipe(object)}}>
               {/*  <div onClick={()=>{setShow(true);setItem(item)}}> */}
-              <img src={thumbnail} alt="oh no"></img>
-            <div>
+              <div className='img'><img src={thumbnail} alt="oh no" className='thumb'></img></div>
+            <div className="popup-text">
               <p>{title}</p>
-              <p>Serving size:{serving}</p>
+              <p>Serving size: {serving}</p>
             </div>
             </div>
             <Info preview={preview} object={indivRecipe} onClose={() => setPreview(false)} />
