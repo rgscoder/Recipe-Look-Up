@@ -10,17 +10,19 @@ const Info=({preview,object,onClose}) => {
   }
   // try with .SMALL
   // else {
-  let thumbnail= object.recipe.images.REGULAR.url;
-let list = object.recipe.ingredientLines
+  let thumbnail= object.recipe.image;
+let list = object.recipe.ingredientLines;
+let diet = object.recipe.dietLabels;
+
   // let list=JSON. stringify(object.recipe.ingredientLines)
   // console.log(list)
   return (
-    <>
-    <div>
-      <button onClick={onClose}>close</button>
+    <div className="overlay" onClick={onClose}>
+    <div className='window'>
+      {/* <div className='close-div'><button onClick={onClose} id="close">close</button></div> */}
       {/* close when clicked outside of */}
-      <div>
-        <img src={thumbnail} alt="image"></img>
+      <div className="inner-div">
+        <div className="inner-img"><img src={thumbnail} alt="image" className="pop-img"></img></div>
           <div>
             <ul>
               <li>
@@ -40,22 +42,24 @@ let list = object.recipe.ingredientLines
             </div>
 {/*  */}
             <hr></hr>
+            
             <h2>Additional Information</h2>
             <h3>Total Calories</h3>
             <p>{object.recipe.calories}</p>
-            <h3>Dietary Restrictions</h3>
-            <p>{object.recipe.dietLabels}</p>
+            <h3>Dietary Restrictions:</h3>
+            <ul>
+                    {diet.map((x,y) => <li key={y}>{x}</li> )}
+                </ul>
+
             <h3>Best served during:</h3>
             <p>{object.recipe.mealType}</p>
             </li>
             </ul>
             <a href={object.recipe.url}><button>View Full Recipe Description</button></a>
-            
-          
           </div>
       </div>
     </div>
-  </>)
+  </div>)
 };
 //  }
 

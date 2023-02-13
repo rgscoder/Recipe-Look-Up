@@ -8,9 +8,11 @@
 
 
 .main {
-  background-image: url(./components/fruit.jpeg);
+  background-image: url(./components/images/fruit.jpeg);
   background-size: cover;
   padding-bottom: 2%;
+  display: grid;
+  height: fit-content;
   position: relative;
 }
 
@@ -19,6 +21,26 @@ h1 {
   color: rgb(227, 193, 0);
   font-size: 30px;
   text-align: center;
+  text-shadow: 0 5px 10px rgb(0, 0, 0);
+  
+}
+
+.header {
+  width: 100%;
+  display: grid;
+  height: fit-content;
+  background-color: white;
+}
+
+.nav {
+  background-color: red;
+  padding-left: 3%;
+  padding-right: 3%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: center;
+  border: 2px solid black;
   
 }
 
@@ -58,13 +80,14 @@ h1 {
   margin: 20px;
   width: 230px;
   height: 350px;
-  border: 1px black solid;
   padding-top: 2%;
   background-color: rgb(251, 185, 161);
   border-radius: 10px !important;
+  box-shadow: 0 5px 10px rgb(126, 82, 69);
   }
 .popup:hover {
-background-color: rgb(249, 152, 117);;
+background-color: rgb(249, 152, 117);
+box-shadow: 0 5px 10px rgb(17, 14, 14);
 }
  
   .popup-text {
@@ -82,13 +105,94 @@ text-align: center;
     
   }
 
+  .pop-img{
+    padding-top: 5%;
+  }
+
   .thumb {
     border-radius: 10px !important;
-    border: 1px black solid;
+    border: 1px rgb(227, 98, 51) solid;
   }
 
   .row {
     min-height: fit-content;
     width: fit-content;
   }
+
+.window {
+  display: grid;
+  justify-content:center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 2%;
+  margin-left: 9%;
+  height:100%;
+  width: 800px;
+  position: static;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(227, 98, 51);
+  align-items: center;
+  
+}
+
+.window:hover {
+  overflow-y: hidden;
+  position:static;
+  
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.089);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+
+
+.window:hover {
+  overflow: scroll;
+}
+
+.inner-div {
+  display:grid;
+  justify-content:center;
+  align-content: center;
+}
+
+.inner-img {
+  width: 100%;
+  display:grid;
+  justify-content:center;
+  align-content: center;
+}
+
+a {
+  padding-bottom: 5%;
+}
+
+li {
+  list-style: none;
+}
+
+/* #close {
+  background-color: rgb(249, 249, 249);
+  border-radius: 10px !important;
+  position: right;
+  width:fit-content;
+} */
+
+/* #close:hover {
+  box-shadow: 0px 0px 10px 5px rgb(227, 193, 0);
+} */
 
