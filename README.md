@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+By the end of class everyday, I always find myself incredibly hungry but I never know what I want to eat.
+I usually scroll through grubhub looking for something close by to pick up, but lately I've been craving 
+something home cooked. This inspired me to make an app that displays diffrent recipes based on what ever food I am craving. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+One of the first issues I encountered was finding an API that fit my desired app. I was eventually able to
+find one, and began hand drawing a wireframe for the basic layout.
 
-## Available Scripts
+Sites I used: 
+           API: https://developer.edamam.com/edamam-recipe-api
 
-In the project directory, you can run:
+           Troubleshooting: https://dev.to/olenadrugalya/ways-of-getting-data-from-api-in-react-2kpf
 
-### `npm start`
+                            https://stackoverflow.com/questions/52428879/objects-are-not-valid-as-a-react-child-if-you-meant-to-render-a-collection-of-c
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+            Packs: https://www.npmjs.com/package/axios
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technologies used:
+                    Axios
+                    REACT
+                    Hooks- useState
+                    functional components
 
-### `npm test`
+Install instructions: Clone repository -> npm start (npm pack required) -> enter text -> click enter button on keyboard -> click on a recipe -> to close click anywhere
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Issues: I was not able to get the modal to stop displaying when the mouse is clicked outside of the modal. I 
+will continue to work on this feature. 
 
-### `npm run build`
+Future additions: I would like to add a navigation bar, a save recipe option, and an add a recipe option.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Links: 
+        Netlify- 
+        Github- https://github.com/rgscoder/rgscoder.github.io
