@@ -1,6 +1,6 @@
 By the end of class everyday, I always find myself incredibly hungry but I never know what I want to eat.
 I usually scroll through grubhub looking for something close by to pick up, but lately I've been craving 
-something home cooked. This inspired me to make an app that displays diffrent recipes based on what ever food I am craving. 
+something home cooked. This inspired me to make an app that displays different recipes based on what ever food I am craving. 
 
 One of the first issues I encountered was finding an API that fit my desired app. I was eventually able to
 find one, and began hand drawing a wireframe for the basic layout.
@@ -28,5 +28,5 @@ will continue to work on this feature.
 Future additions: I would like to add a navigation bar, a save recipe option, and an add a recipe option.
 
 Links: 
-        Netlify- 
+        Netlify- https://63ea735861efa8083a054204--thriving-zuccutto-59a4ad.netlify.app/
         Github- https://github.com/rgscoder/rgscoder.github.io
