@@ -23,7 +23,7 @@ function Main() {
   return (
   <div className="-">
     <div className='main'>
-        <h1 id="sub-title">Find a Recipe!</h1>
+        <h2 id="sub-title">Find a Recipe!</h2>
         <br></br>
             <div className="search-all">
                 
